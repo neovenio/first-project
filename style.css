@@ -1,0 +1,32 @@
+body {
+    background-color: #5bc713;
+}
+
+h1 {
+    color: red;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(0, 162, 255);
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+    h1 {
+        color: blueviolet;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}
