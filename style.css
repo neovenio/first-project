@@ -1,131 +1,105 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins','Franklin Gothic Medium', Arial, sans-serif;
+    font-family: 'Poppins', 'Franklin Gothic Medium', Arial, sans-serif;
 }
-.about{
+
+body {
+    background: black;
+    color: white;
+}
+
+.about {
     min-height: 100vh;
     width: 100%;
-    padding: 78px 0px;
+    padding: 78px 0;
     background-color: #17182f;
 }
-.about img{
-    border: 2px solid #fc98e5;
-    box-shadow: 0 0 5px #fc98e5,
-                0 0 25px #fc98e5;
-    height: auto;
-    width: 50%;
-    border-radius: 5em;
-    transition: 0.5s ease; 
-}
-.main{
+
+.main {
     width: 1200px;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
 }
-.about-text h1{
-    color: white;
+
+.image-container img {
+    width: 410px; 
+    border: 2px solid #fc98e5;
+    border-radius: 5em;
+    box-shadow: 0 0 5px #fc98e5, 0 0 25px #fc98e5;
+    transition: 0.5s ease;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text h1 {
     font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+    margin: 0;
 }
-.about-text h5{
-    color: white;
+
+.about-text h5 {
     font-size: 28px;
-    text-transform: 25px;
-    margin-bottom: 0.4em;
+    margin: 0;
 }
-span{
+
+.about-text span {
     color: #fc98e5;
 }
-.about-text p{
+
+.about-text p {
     color: rgba(255, 236, 236, 0.8);
-    letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
-    margin-bottom: 45px;
+    width: 650px;
+    text-align: justify;
 }
-button{
-    align-self: flex-start;
-    margin-left: 50px;
+
+.about-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.about-buttons button {
     background: transparent;
     color: #fc98e5;
     font-size: 16px;
-    text-decoration: none;
-    border: 2px solid #fc98e5;
     font-weight: bold;
     padding: 13px 30px;
+    border: 2px solid #fc98e5;
     border-radius: 30px;
-    transition: .4s ease;
+    transition: 0.4s ease;
 }
-button:hover{
+
+.about-buttons button:hover {
     background: #fc98e5;
     color: white;
-    border: 2px solid #fc98e5;
-    box-shadow: 0 0 5px #fc98e5,
-                0 0 25px #fc98e5;
-    cursor: pointer;
+    box-shadow: 0 0 5px #fc98e5, 0 0 25px #fc98e5;
     transform: scale(1.1);
+    cursor: pointer;
 }
-.cv{
-    margin-left: 0.5em;
-}
-p {
-    align-self: flex-start;
-    margin-left: 50px;
-    text-align: justify;
-    width: 650px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    word-spacing: 3px;
-}
-h5 {
-    align-self: flex-start;
-    margin-left: 50px;
-    text-align: justify;
-    width: 650px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    word-spacing: 3px;
-}
-.text-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 50px;
-}
-h1 {
-    align-self: flex-start;
-    margin-left: 50px;
-    text-align: justify;
-    width: 650px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    word-spacing: 3px;
-}
-body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-    color: white;
-  }
-  .star {
+
+.star {
     position: fixed;
     font-size: 60px;
     color: gold;
     opacity: 0.95;
-
-        -webkit-text-stroke: 2px black; 
-        text-stroke: 2px black;
-      
-        animation: float 4s ease-in-out infinite alternate,
-                   spin 3s linear infinite;
-      }
+    -webkit-text-stroke: 2px black;
+    animation: float 4s ease-in-out infinite alternate, spin 3s linear infinite;
+}
 
 .star:nth-child(1) { top: 5%; left: 10%; }
 .star:nth-child(2) { top: 35%; right: 10%; }
@@ -134,13 +108,7 @@ body {
 .star:nth-child(5) { bottom: 10%; left: 15%; }
 .star:nth-child(6) { bottom: 20%; left: 75%; }
 .star:nth-child(7) { bottom: 5%; right: 10%; }
-.star:nth-child(8) { top: 35%; left: 5%; }  
+.star:nth-child(8) { top: 35%; left: 5%; }
 
-  @keyframes float {
-    from { transform: translateY(0); }
-    to   { transform: translateY(-30px); }
-  }
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-  }
+@keyframes float { from { transform: translateY(0); } to { transform: translateY(-30px); } }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
